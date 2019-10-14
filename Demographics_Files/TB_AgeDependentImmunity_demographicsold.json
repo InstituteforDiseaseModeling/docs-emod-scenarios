@@ -1,0 +1,146 @@
+{
+    "Metadata": {
+        "Author": "jsteinkraus", 
+        "DateCreated": "Sun Sep 25 23:19:55 2011", 
+        "IdReference": "SampleContent", 
+        "NodeCount": 1, 
+        "Tool": "convertdemog.py"
+    }, 
+    "Defaults": {
+        "IndividualProperties": [
+            {
+                "Initial_Distribution": [
+                    0.5, 
+                    0.5
+                ], 
+                "Property": "QualityOfCare", 
+                "Transitions": [], 
+                "Values": [
+                    "Hospital", 
+                    "CDC"
+                ]
+            }
+        ] 
+    },
+    "Nodes": [
+        {
+            "IndividualAttributes": {
+                "AgeDistribution": {
+                    "DistributionValues": [
+                        0, 
+                        0.095, 
+                        0.19, 
+                        0.285, 
+                        0.378, 
+                        0.466, 
+                        0.549, 
+                        0.627, 
+                        0.7, 
+                        0.767, 
+                        0.824, 
+                        0.872, 
+                        0.911, 
+                        0.942, 
+                        0.966, 
+                        0.983, 
+                        0.993, 
+                        0.998, 
+                        1, 
+                        1
+                    ], 
+                    "NumDistributionAxes": 0, 
+                    "ResultScaleFactor": 365, 
+                    "ResultUnits": "years", 
+                    "ResultValues": [
+                        0, 
+                        5, 
+                        10, 
+                        15, 
+                        20, 
+                        25, 
+                        30, 
+                        35, 
+                        40, 
+                        45, 
+                        50, 
+                        55, 
+                        60, 
+                        65, 
+                        70, 
+                        75, 
+                        80, 
+                        85, 
+                        90, 
+                        95
+                    ]
+                }, 
+                "AgeDistribution1": 7300, 
+                "AgeDistribution2": 0, 
+                "AgeDistributionFlag": 0, 
+                "SusceptibilityDistribution1": 1, 
+                "SusceptibilityDistribution2": 0, 
+                "SusceptibilityDistributionFlag": 0, 
+                "MigrationHeterogeneityDistribution1": 1, 
+                "MigrationHeterogeneityDistribution2": 0, 
+                "MigrationHeterogeneityDistributionFlag": 0, 
+                "MortalityDistribution": {
+                    "AxisNames": [
+                        "gender", 
+                        "age"
+                    ], 
+                    "AxisScaleFactors": [
+                        1, 
+                        365
+                    ], 
+                    "AxisUnits": [
+                        "male=0,female=1", 
+                        "days"
+                    ], 
+                    "NumDistributionAxes": 2, 
+                    "NumPopulationGroups": [
+                        2, 
+                        1
+                    ], 
+                    "PopulationGroups": [
+                        [
+                            0, 
+                            1
+                        ], 
+                        [
+                            0
+                        ]
+                    ], 
+                    "ResultScaleFactor": 0, 
+                    "ResultUnits": "annual deaths per 1000 individuals", 
+                    "ResultValues": [
+                        [
+                            0
+                        ], 
+                        [
+                            0
+                        ]
+                    ]
+                }, 
+                "PrevalenceDistribution1": 0, 
+                "PrevalenceDistribution2": 0, 
+                "PrevalenceDistributionFlag": 1, 
+                "RiskDistribution1": 1, 
+                "RiskDistribution2": 0, 
+                "RiskDistributionFlag": 0
+            }, 
+            "NodeAttributes": {
+                "AbovePoverty": 0, 
+                "Airport": 0, 
+                "Altitude": 0, 
+                "BirthRate": 0.5, 
+                "InitialPopulation": 10000, 
+                "Latitude": -8.5, 
+                "Longitude": 36.5, 
+                "Region": 1, 
+                "Seaport": 0, 
+                "Urban": 0
+            }, 
+            "NodeID": 340461476
+        }
+    ]
+}

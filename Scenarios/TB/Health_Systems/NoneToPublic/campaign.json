@@ -1,0 +1,162 @@
+{
+  "Events": [
+    {
+      "Event_Coordinator_Config": {
+        "Demographic_Coverage": 1,
+        "Intervention_Config": {
+          "Clade": 0,
+          "Genome": 0,
+          "Outbreak_Source": "PrevalenceIncrease",
+          "class": "OutbreakIndividual"
+        },
+        "Number_Repetitions": 1,
+        "Property_Restrictions": [],
+        "Target_Demographic": "Everyone",
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Event_Name": "Outbreak",
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 1,
+      "class": "CampaignEvent"
+    },
+    {
+      "Event_Coordinator_Config": {
+        "Demographic_Coverage": 1,
+        "Intervention_Config": {
+          "Actual_IndividualIntervention_Config": {
+            "Actual_IndividualIntervention_Configs": [
+              {
+                "Cost_To_Consumer": 1,
+                "Dose_Interval": 1,
+                "Drug_Type": "FirstLineCombo",
+                "Durability_Profile": "FIXED_DURATION_CONSTANT_EFFECT",
+                "Fraction_Defaulters": 0,
+                "Primary_Decay_Time_Constant": 50,
+                "Reduced_Transmit": 1,
+                "Remaining_Doses": 1,
+                "TB_Drug_Name": "PublicDrug",
+                "class": "TBHIVConfigurableTBdrug"
+              }
+            ],
+            "Coverage": 1,
+            "Delay_Period_Distribution": "CONSTANT_DISTRIBUTION",
+            "Delay_Period_Constant": 100,
+            "class": "DelayedIntervention"
+          },
+          "Demographic_Coverage": 1,
+          "Property_Restrictions_Within_Node": [
+            {
+              "QualityOfCare": "Public"
+            }
+          ],
+          "Trigger_Condition_List": [
+            "TBActivation"
+          ],
+          "class": "NodeLevelHealthTriggeredIV"
+        },
+        "Number_Repetitions": 1,
+        "Target_Demographic": "Everyone",
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Event_Name": "Drugs after TB activation",
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 1,
+      "class": "CampaignEvent"
+    },
+    {
+      "Event_Coordinator_Config": {
+        "Demographic_Coverage": 1,
+        "Intervention_Config": {
+          "Actual_IndividualIntervention_Config": {
+            "Actual_IndividualIntervention_Configs": [
+              {
+                "Cost_To_Consumer": 1,
+                "Dose_Interval": 1,
+                "Drug_Type": "FirstLineCombo",
+                "Durability_Profile": "FIXED_DURATION_CONSTANT_EFFECT",
+                "Fraction_Defaulters": 0,
+                "Primary_Decay_Time_Constant": 50,
+                "Reduced_Transmit": 1,
+                "Remaining_Doses": 1,
+                "TB_Drug_Name": "PrivateDrug",
+                "class": "TBHIVConfigurableTBdrug"
+              }
+            ],
+            "Coverage": 1,
+            "Delay_Period_Distribution": "CONSTANT_DISTRIBUTION",
+            "Delay_Period_Constant": 100,
+            "class": "DelayedIntervention"
+          },
+          "Demographic_Coverage": 1,
+          "Property_Restrictions_Within_Node": [
+            {
+              "QualityOfCare": "Private"
+            }
+          ],
+          "Trigger_Condition_List": [
+            "TBActivation"
+          ],
+          "class": "NodeLevelHealthTriggeredIV"
+        },
+        "Number_Repetitions": 1,
+        "Target_Demographic": "Everyone",
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Event_Name": "Drugs after TB activation",
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 1,
+      "class": "CampaignEvent"
+    },
+    {
+      "Event_Coordinator_Config": {
+        "Demographic_Coverage": 1,
+        "Intervention_Config": {
+          "Actual_IndividualIntervention_Config": {
+            "Actual_IndividualIntervention_Configs": [
+              {
+                "Cost_To_Consumer": 1,
+                "Dose_Interval": 1,
+                "Durability_Profile": "FIXED_DURATION_CONSTANT_EFFECT",
+                "Fraction_Defaulters": 0,
+                "Primary_Decay_Time_Constant": 50,
+                "Reduced_Transmit": 1,
+                "Remaining_Doses": 1,
+                "TB_Drug_Name": "PublicDrug",
+                "class": "TBHIVConfigurableTBdrug"
+              }
+            ],
+            "Coverage": 1,
+            "Delay_Period_Distribution": "CONSTANT_DISTRIBUTION",
+            "Delay_Period_Constant": 100,
+            "class": "DelayedIntervention"
+          },
+          "Daily_Probability": 1,
+          "Maximum_Duration": 1000000000.0,
+          "Revert": 0,
+          "Target_Property_Key": "QualityOfCare",
+          "Target_Property_Value": "Public",
+          "class": "PropertyValueChanger"
+        },
+        "Number_Repetitions": 1,
+        "Property_Restrictions": [
+          "QualityOfCare:None"
+        ],
+        "Target_Demographic": "Everyone",
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Event_Name": "Transition from none to public care",
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 750,
+      "class": "CampaignEvent"
+    }
+  ],
+  "Use_Defaults": 1
+}

@@ -1,0 +1,259 @@
+{
+   "Campaign_Name": "TBHIV Campaign",
+   "Events": [
+      {
+         "Event_Coordinator_Config": {
+            "Demographic_Coverage": 0.05,
+            "Intervention_Config": {
+               "Clade": 0,
+               "Genome": 0,
+               "Infection_Type": "TB",
+               "Outbreak_Source": "PrevalenceIncrease",
+               "class": "OutbreakIndividualTBorHIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "Target_Demographic": "Everyone",
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "OutbreakIndividualTBorHIV",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 1,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Demographic_Coverage": 0.05,
+            "Intervention_Config": {
+               "Clade": 0,
+               "Genome": 0,
+               "Infection_Type": "TB",
+               "Outbreak_Source": "PrevalenceIncrease",
+               "class": "OutbreakIndividualTBorHIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "Target_Demographic": "Everyone",
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "OutbreakIndividualTBorHIV",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 693135,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Actual_IndividualIntervention_Config": {
+                  "Base_Sensitivity": 0.7,
+                  "Base_Specificity": 0.6,
+                  "Days_To_Diagnosis": 0,
+                  "Defaulters_Event": "TBTestDefault",
+                  "Event_Or_Config": "Event",
+                  "Negative_Diagnosis_Event": "TBTestNegative",
+                  "Positive_Diagnosis_Event": "TBTestPositive",
+                  "Treatment_Fraction": 0.8,
+                  "class": "DiagnosticTreatNeg"
+               },
+               "Blackout_Event_Trigger": "Blackout",
+               "Blackout_On_First_Occurrence": 0,
+               "Blackout_Period": 0,
+               "Distribute_On_Return_Home": 0,
+               "Duration": -1,
+               "Property_Restrictions": [],
+               "Trigger_Condition_List": [
+                  "TBTestPreDOTS"
+               ],
+               "class": "NodeLevelHealthTriggeredIV"
+            },
+            "Node_Property_Restrictions": [],
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "TB Diagnosis",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 693500,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Actual_IndividualIntervention_Config": {
+                  "Actual_IndividualIntervention_Event": "TBTestPreDOTS",
+                  "Event_Or_Config": "Event",
+                  "Single_Use": 1,
+                  "Tendency": 0.0038022813688212928,
+                  "class": "SimpleHealthSeekingBehavior"
+               },
+               "Blackout_Event_Trigger": "Blackout",
+               "Blackout_On_First_Occurrence": 0,
+               "Blackout_Period": 0,
+               "Distribute_On_Return_Home": 0,
+               "Duration": -1,
+               "Property_Restrictions": [],
+               "Trigger_Condition_List": [
+                  "TBActivation"
+               ],
+               "class": "NodeLevelHealthTriggeredIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "Simple Health Seeking",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 693500,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Actual_IndividualIntervention_Config": {
+                  "Active_Multiplier": 1.0,
+                  "Durability_Profile": "FIXED_DURATION_CONSTANT_EFFECT",
+                  "Latency_Multiplier": 1,
+                  "Remaining_Doses": 1,
+                  "TB_Drug_Name": "PreDOTSLowNoMDR",
+                  "class": "TBHIVConfigurableTBdrug"
+               },
+               "Blackout_Event_Trigger": "Blackout",
+               "Blackout_On_First_Occurrence": 0,
+               "Blackout_Period": 0,
+               "Distribute_On_Return_Home": 0,
+               "Duration": -1,
+               "Property_Restrictions": [],
+               "Trigger_Condition_List": [
+                  "TBTestPositive"
+               ],
+               "class": "NodeLevelHealthTriggeredIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "TB Treatment",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 693500,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Clade": 0,
+               "Genome": 0,
+               "Infection_Type": "HIV",
+               "Outbreak_Source": "PrevalenceIncrease",
+               "class": "OutbreakIndividualTBorHIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": -1,
+            "Time_Offset": 0,
+            "Timesteps_Between_Repetitions": 1,
+            "class": "GroupInterventionDistributionEventCoordinatorHIV"
+         },
+         "Event_Name": "HIV Incidence",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 724525,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Actual_IndividualIntervention_Config": {
+                  "Base_Sensitivity": 1.0,
+                  "Base_Specificity": 1.0,
+                  "Days_To_Diagnosis": 0,
+                  "Event_Or_Config": "Event",
+                  "Negative_Diagnosis_Event": "HIVTestedNegative",
+                  "Positive_Diagnosis_Event": "HIVTestedPositive",
+                  "Treatment_Fraction": 1.0,
+                  "class": "HIVSimpleDiagnostic"
+               },
+               "Blackout_Event_Trigger": "Blackout",
+               "Blackout_On_First_Occurrence": 0,
+               "Blackout_Period": 0,
+               "Distribute_On_Return_Home": 0,
+               "Duration": -1,
+               "Property_Restrictions": [],
+               "Trigger_Condition_List": [
+                  "HappyBirthday"
+               ],
+               "class": "NodeLevelHealthTriggeredIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "HIV Simple Diagnostic",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 732190,
+         "class": "CampaignEvent"
+      },
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Actual_IndividualIntervention_Config": {
+                  "CD4_Thresholds": [
+                     {
+                        "Event": "Below200",
+                        "High": 200,
+                        "Low": 0
+                     },
+                     {
+                        "Event": "Below350",
+                        "High": 350,
+                        "Low": 200
+                     },
+                     {
+                        "Event": "Below500",
+                        "High": 500,
+                        "Low": 350
+                     },
+                     {
+                        "Event": "Above500",
+                        "High": 20000,
+                        "Low": 500
+                     }
+                  ],
+                  "class": "CD4Diagnostic"
+               },
+               "Blackout_Event_Trigger": "Blackout",
+               "Blackout_On_First_Occurrence": 0,
+               "Blackout_Period": 0,
+               "Distribute_On_Return_Home": 0,
+               "Duration": -1,
+               "Property_Restrictions": [],
+               "Trigger_Condition_List": [
+                  "HIVTestedPositive"
+               ],
+               "class": "NodeLevelHealthTriggeredIV"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "CD4 Diagnostic",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 732190,
+         "class": "CampaignEvent"
+      }
+   ],
+   "Use_Defaults": 1
+}

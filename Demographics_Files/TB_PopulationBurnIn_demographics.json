@@ -1,0 +1,81 @@
+{
+    "Metadata": {
+        "DateCreated": "Sun Sep 25 23:19:55 2011", 
+        "Tool": "convertdemog.py", 
+        "Author": "jsteinkraus", 
+        "IdReference": "SampleContent", 
+        "NodeCount": 1
+    }, 
+    "Defaults": {
+        "IndividualProperties": [
+            {
+                "Property": "QualityOfCare",
+                "Values": [
+                    "None",
+                    "Private",
+                    "Public"
+                ],
+                "Initial_Distribution": [ 0, 1, 0 ],
+                "Transitions": []
+            }
+        ]
+    },
+    "Nodes": [
+        {
+            "NodeID": 340461476, 
+            "NodeAttributes": {
+                "Latitude": -8.5, 
+                "Longitude": 36.5, 
+                "Altitude": 0, 
+                "Airport": 0, 
+                "Region": 1, 
+                "Seaport": 0, 
+                "InitialPopulation": 100000, 
+                "BirthRate": 7.25,
+				"AbovePoverty": 0,
+				"Urban": 0
+            }, 
+            "IndividualAttributes": {
+                "AgeDistributionFlag": 0, 
+                "AgeDistribution1": 7300, 
+                "AgeDistribution2": 0, 
+                "PrevalenceDistributionFlag": 0, 
+                "PrevalenceDistribution1": 0.5, 
+                "PrevalenceDistribution2": 0, 
+                "SusceptibilityDistributionFlag": 0, 
+                "SusceptibilityDistribution1": 1, 
+                "SusceptibilityDistribution2": 0, 
+                "RiskDistributionFlag": 0, 
+                "RiskDistribution1": 1, 
+                "RiskDistribution2": 0, 
+                "MigrationHeterogeneityDistributionFlag": 0, 
+                "MigrationHeterogeneityDistribution1": 1, 
+                "MigrationHeterogeneityDistribution2": 0,
+				"AgeDistribution": { 
+                "NumDistributionAxes": 0,
+                "ResultUnits": "years",
+                "ResultScaleFactor": 365,
+                    "ResultValues": [ 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85 ],
+					"DistributionValues":[0, 0.11861136002893,0.243120423759721,0.342944119572159,0.438070229201696,0.5214270550481,0.594815231666682,0.666855737751466,0.731896027864999,0.790430805636026,0.843312403517271,0.886324004910257,0.925078059704281,0.955212492980567,0.977864680991485,0.990698956452811,0.997190887837509,1]
+				},
+                "MortalityDistribution": {
+                    "NumDistributionAxes": 2,
+                    "AxisNames": [ "gender", "age" ],
+                    "AxisUnits": [ "male=0,female=1", "days" ],
+                    "AxisScaleFactors": [ 1, 1 ],
+                    "NumPopulationGroups": [ 2, 39 ],
+                    "PopulationGroups": [
+                        [ 0, 1 ],
+                        [0, 364, 365, 1824, 1825.0,  3649, 3650.0,  5474, 5475.0,  7299, 7300.0,  9124, 9125.0, 10949, 10950.0, 12774, 12775.0, 14599, 14600.0, 16424, 16425.0, 18249, 18250.0, 20074, 20075.0, 21899, 21900.0, 23724, 23725.0, 25549, 25550.0, 27374, 27375.0, 29199, 29200, 31024, 31025, 36499, 37500 ]
+                    ],
+                    "ResultUnits": "annual deaths per 1000 individuals",
+                    "ResultScaleFactor": 0.00273972602,
+                    "ResultValues": [
+					[0.13117,0.13117,0.00252,0.00252,0.00084,0.0084,0.0055,0.0055,0.0295,0.0295,0.0295,0.0295,0.01,0.01,0.01,0.01,0.03,0.03,0.03,0.03,0.03,0.03,0.01971,0.01971,0.01980,0.01980,0.03424,0.03424,0.15943,0.15943,0.17944,0.17944,0.17944,0.17944,0.17944,5000,5000, 5000, 5000], 
+					[0.13117,0.13117,0.00252,0.00252,0.00084,0.0084,0.0055,0.0055,0.0295,0.0295,0.0295,0.0295,0.01,0.01,0.01,0.01,0.03,0.03,0.03,0.03,0.03,0.03,0.01971,0.01971,0.01980,0.01980,0.03424,0.03424,0.15943,0.15943,0.17944,0.17944,0.17944,0.17944,0.17944,5000,5000, 5000, 5000]
+                    ]
+                }
+            }
+        }
+    ]
+}

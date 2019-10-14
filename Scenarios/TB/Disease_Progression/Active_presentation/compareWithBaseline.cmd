@@ -1,0 +1,1 @@
+python ..\..\..\..\Scripts\plotTbResults_Progression_Comparison.py ..\SEIR\output\InsetChart.json output\InsetChart.json -c "Latent TB Prevalence" -c "Active Presymptomatic Prevalence" -c "Active Symptomatic Prevalence" -c "Active Sx Smear pos Prevalence" -c "Active Sx Smear neg Prevalence" -c "Active Sx Extrapulm Prevalence"

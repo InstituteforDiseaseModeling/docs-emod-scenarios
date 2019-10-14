@@ -1,0 +1,19 @@
+{
+   "Custom_Reports": {
+      "Report_TBHIV_ByAge": {
+         "Enabled": 1,
+         "Reports": [
+            {
+               "Additional_Events": [
+                  "TBTestPreDOTS"
+               ],
+               "Max_Age_Yrs": 200,
+               "Min_Age_Yrs": 0,
+               "Start_Year": 1899,
+               "Stop_Year": 2200
+            }
+         ]
+      },
+      "Use_Explicit_Dlls": 1
+   }
+}
