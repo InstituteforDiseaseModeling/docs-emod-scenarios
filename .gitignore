@@ -1,0 +1,23 @@
+# IDEs
+
+## Jetbrains (IntelliJ, PyCharm, etc.)
+.idea
+
+## VS Code
+.vscode
+
+## RStudio
+.Rproj.user
+.RData
+.Ruserdata
+
+
+# EMOD
+output
+status.txt
+
+
+# Python
+.virtualenv
+__pycache__
+
