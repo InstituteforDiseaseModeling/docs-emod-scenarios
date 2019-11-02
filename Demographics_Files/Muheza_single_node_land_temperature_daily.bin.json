@@ -2,7 +2,7 @@
      "Metadata": {
           "DateCreated": "Sun Sep 25 21:38:24 2011", 
           "Tool": "createclimateheader.py", 
-          "Author": "jsteinkraus", 
+          "Author": "IDM",
           "IdReference": "Gridded world grump2.5arcmin", 
           "NodeCount": 1, 
           "DatavalueCount": 3650, 

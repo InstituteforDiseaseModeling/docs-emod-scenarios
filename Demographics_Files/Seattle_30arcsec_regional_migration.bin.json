@@ -2,7 +2,7 @@
      "Metadata": {
           "DateCreated": "Mon Sep 26 09:59:35 2011", 
           "Tool": "createmigrationheader.py", 
-          "Author": "jsteinkraus", 
+          "Author": "IDM",
           "IdReference": "SampleContent", 
           "NodeCount": 124, 
           "DatavalueCount": 30
