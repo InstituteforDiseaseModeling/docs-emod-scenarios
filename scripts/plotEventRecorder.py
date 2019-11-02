@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # SUMMARY: Plot events that occur during a simulation, disaggregated by gender.  Note that common events, e.g. ARTStaging0 and ARTStaging1 will be displayed in separate rows in a common column with heading ARTStaging.
 # INPUT ARGUMENTS: (1) Path to ReportEventRecorder.csv

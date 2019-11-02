@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # SUMMARY: Plot the population by age group
 # INPUT ARGUMENTS: (1) Path to BinnedReport.json

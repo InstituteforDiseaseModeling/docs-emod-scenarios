@@ -1,4 +1,4 @@
 @SETLOCAL
 @SET PATH=%PATH%;C:\Python36
-python ..\..\..\Scripts\plotAllCharts.py output\InsetChart.json "Density Scaling"
+plotAllCharts.py output\InsetChart.json "Density Scaling"
 @ENDLOCAL

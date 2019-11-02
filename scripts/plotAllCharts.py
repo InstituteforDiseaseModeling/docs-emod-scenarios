@@ -1,9 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from __future__ import print_function
 from __future__ import division
 from builtins import str
-from past.utils import old_div
 import matplotlib.pyplot as plt
 import json
 import sys
@@ -20,7 +19,7 @@ def plotOneFromDisk( label = "" ):
     square_root = ceil(sqrt(num_chans))
 
     n_figures_x = square_root
-    n_figures_y = ceil(old_div(float(num_chans),float(square_root)))
+    n_figures_y = ceil(float(num_chans)/float(square_root))
 
     idx = 1
     plt.figure(1, figsize=(14.0, 7.5))

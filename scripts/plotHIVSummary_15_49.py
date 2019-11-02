@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # SUMMARY: Plot HIV prevalence, incidence rate, and mortality rate for ages 15-49 by gender
 # INPUT ARGUMENTS: (1) Path to ReportHIVByAgeAndGender.csv
