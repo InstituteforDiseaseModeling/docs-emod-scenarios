@@ -21,3 +21,4 @@ status.txt
 .virtualenv
 __pycache__
 
+log
