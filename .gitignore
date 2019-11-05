@@ -10,15 +10,20 @@
 .Rproj.user
 .RData
 .Ruserdata
+.Rhistory
 
 
 # EMOD
 output
 status.txt
-
+log
+*.temp.json
 
 # Python
 .virtualenv
+.venv
 __pycache__
 
-log
+# Packrat (R)
+packrat/lib*/
+packrat/src/
