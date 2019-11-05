@@ -1,4 +1,5 @@
+packrat::restore(project=Sys.getenv("PROJECT_ROOT"), restart=TRUE, overwrite.dirty=TRUE)
 library(RColorBrewer)
 library(rjson)
-library(igraph)
 library(deSolve)
+library(igraph)

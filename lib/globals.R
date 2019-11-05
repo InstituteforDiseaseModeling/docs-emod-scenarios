@@ -10,3 +10,7 @@ if(is.na(EMOD_INPUT_ROOT)) {
     EMOD_INPUT_ROOT <- file.path(PROJECT_ROOT, 'Demographics_Files')
     Sys.setenv(EMOD_INPUT_ROOT=EMOD_INPUT_ROOT)
 }
+
+if (!require("packrat")){
+    install.packages("packrat")
+}
