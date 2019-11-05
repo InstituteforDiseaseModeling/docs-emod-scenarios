@@ -1,4 +1,4 @@
-auto.snapshot: TRUE
+auto.snapshot: FALSE
 use.cache: FALSE
 print.banner.on.startup: auto
 vcs.ignore.lib: TRUE
@@ -10,8 +10,8 @@ ignored.packages:
 ignored.directories:
     data
     inst
-quiet.package.installation: TRUE
-snapshot.recommended.packages: TRUE
+quiet.package.installation: FALSE
+snapshot.recommended.packages: FALSE
 snapshot.fields:
     Imports
     Depends

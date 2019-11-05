@@ -26,3 +26,5 @@ __pycache__
 
 # Packrat (R)
 packrat/lib*/
+packrat/src/**
+!packrat/src/packrat

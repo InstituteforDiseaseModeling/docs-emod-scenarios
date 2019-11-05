@@ -31,3 +31,4 @@ packrat_freeze <- function() {
     selected = installed_packages[,c("Package", "Version")]
     write.table(selected, quote=FALSE, row.names=FALSE, col.names=FALSE, sep="==")
 }
+
