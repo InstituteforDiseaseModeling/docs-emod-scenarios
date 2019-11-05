@@ -3,10 +3,7 @@
 ########################
 
 # Set working directory
-
-WD <- file.path(PROJECT_ROOT, 'Scenarios', 'Generic', 'HINT_AgeAndAccess', 'A_BaselineOutbreak')
-setwd(WD)
-
+setwd(file.path(PROJECT_ROOT, 'Scenarios', 'Generic', 'HINT_AgeAndAccess', 'A_BaselineOutbreak'))
 
 ##
 ## Preamble

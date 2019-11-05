@@ -3,11 +3,7 @@
 ######################
 
 # Set working directory
-
-WD <- file.path(PROJECT_ROOT, 'Scenarios', 'Generic', 'SEIR')
-setwd(WD)
-
-
+setwd(file.path(PROJECT_ROOT, 'Scenarios', 'Generic', 'SEIR'))
 
 ##
 ## Preamble
@@ -127,7 +123,7 @@ Ss <- Es <- Is <- Rs <- matrix(NA, NumSims, Duration)
 for (i in 1:NumSims){
 	config_temp$parameters$Run_Number <- i
 	write(toJSON(config_temp), file="config.temp.json")
-  emod(config="config.temp.json")
+  	emod(config="config.temp.json")
 	output <- fromJSON(file = "output/InsetChart.json")
 
 	Ss[i,] <- output$Channels$`Susceptible Population`$Data
