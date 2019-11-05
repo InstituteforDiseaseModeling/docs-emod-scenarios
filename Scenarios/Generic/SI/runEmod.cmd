@@ -1,2 +1,2 @@
-..\..\..inradication.exe --config config.json --input-path ..\..\..\Demographics_Files
+..\..\..\bin\Eradication.exe --config config.json --input-path ..\..\..\Demographics_Files
 @pause

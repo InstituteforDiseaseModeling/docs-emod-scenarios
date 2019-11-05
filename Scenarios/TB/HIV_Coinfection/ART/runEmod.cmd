@@ -1,1 +1,1 @@
-..\..\..\..inradication.exe --config config.json --input-path ..\..\..\..\Demographics_Files --output-path output --dll-path ..\..\..\..\DLLs
+..\..\..\..\bin\Eradication.exe --config config.json --input-path ..\..\..\..\Demographics_Files --output-path output --dll-path ..\..\..\..\DLLs
