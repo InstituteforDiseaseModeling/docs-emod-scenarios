@@ -1,4 +1,5 @@
 @SETLOCAL
-@SET PATH=%PATH%;C:\Python36
-plotAllCharts.py output\InsetChart.json "Density Scaling"
+@SET "PROJECT_ROOT=%~dp0\..\..\.."
+@SET "PATH=%PATH%;%PROJECT_ROOT%\.venv\Scripts"
+python plotAllCharts.py output\InsetChart.json "Density Scaling"
 @ENDLOCAL

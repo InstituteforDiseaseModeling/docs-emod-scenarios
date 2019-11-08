@@ -1,22 +1,28 @@
+import os
+import venv
+import sys
 from setuptools import setup, find_packages
-from os import path
 from io import open
+from pathlib import Path
 
-here = path.abspath(path.dirname(__file__))
+ROOT = Path(os.path.abspath(os.path.dirname(__file__)))
+BIN = ROOT.joinpath('bin')
+SCRIPTS = ROOT.joinpath('scripts')
+
+is_win = (sys.platform == 'win32')
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(ROOT.joinpath('README.md'), encoding='utf-8') as f:
     long_description = f.read()
+    f.close()
 
-# Arguments marked as "Required" below must be included for upload to PyPI.
-# Fields marked as "Optional" may be commented out.
 setup(
-    name='emod_scenarios',  # Required
-    version='1.0.0',  # Required
-    description='Sample EMOD scenarios',  # Optional
-    long_description=long_description,  # Optional
-    long_description_content_type='text/markdown',  # Optional (see note above)
-    url='http://idmod.org/docs',  # Optional
+    name='emod_scenarios',
+    version='1.0.0',
+    description='EMOD example scenarios',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='http://idmod.org/docs',
     author='Institute for Disease Modeling',
     author_email='support@idmod.org',
     classifiers=[
@@ -29,7 +35,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     packages=[],
-    python_requires='>=3.5',
+    python_requires='>=3.6',
     install_requires=[
         'matplotlib',
         'numpy',
@@ -48,7 +54,7 @@ setup(
         'bin/plotTbResults_Progression_Baseline.py',
         'bin/plotTbResults_Progression_Comparison.py',
     ],
-    project_urls={  # Optional
+    project_urls={
         'Bug Reports': 'https://github.com/InstituteforDiseaseModeling/docs-emod-scenarios/issues',
         'Source': 'https://github.com/InstituteforDiseaseModeling/docs-emod-scenarios',
      }
