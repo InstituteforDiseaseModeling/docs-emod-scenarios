@@ -4,14 +4,16 @@ from __future__ import print_function
 from __future__ import division
 from builtins import str
 import matplotlib.pyplot as plt
+import argparse
 import json
 import sys
 import pylab
 from math import ceil, sqrt
 
-def plotOneFromDisk( label = "" ):
 
-    with open( sys.argv[1] ) as ref_sim:
+def main(report, title = "" ):
+
+    with open(report) as ref_sim:
         ref_data = json.loads( ref_sim.read() )
 
     num_chans = ref_data["Header"]["Channels"]
@@ -36,16 +38,14 @@ def plotOneFromDisk( label = "" ):
 
 
     plt.tight_layout()
-    plt.suptitle( label, fontsize=18 )
+    plt.suptitle( title, fontsize=18 )
     plt.subplots_adjust( left=0.05, right=0.95, bottom=0.035, top=0.915, wspace=0.4, hspace=0.5 )
     plt.show()
 
-def main():
-    if len( sys.argv ) != 3:
-        print( "Usage: plotAllCharts.py <inset_chart_json_path> <label>" )
-        sys.exit(0)
-
-    plotOneFromDisk( sys.argv[2] )
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("path", default="InsetChart.json", help="Path to the inset chart JSON file")
+    parser.add_argument("title", default="", help="The title for the chart window")
+    args = parser.parse_args()
+    main(args.path, args.title)
+    pass

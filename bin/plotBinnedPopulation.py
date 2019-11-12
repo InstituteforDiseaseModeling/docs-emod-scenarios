@@ -36,9 +36,9 @@ def main(filename, channel):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename', default='BinnedReport.json')
-    parser.add_argument('-c', '--channel', default='Population')
+    parser.add_argument('path', default='BinnedReport.json', help="Path to the JSON report file")
+    parser.add_argument('-c', '--channel', default='Population', help="Channel to plot")
     args = parser.parse_args()
-    main(args.filename, args.channel)
+    main(args.path, args.channel)
 
     pass

@@ -1,1 +1,3 @@
-& C:\projects\docs-emod-scenarios\bin\Eradication -C config.json -I C:\projects\docs-emod-scenarios\Demographics_Files -D C:\projects\docs-emod-scenarios\dll -O output
+Push-Location -Path $PSScriptRoot
+& ../../../../../bin/Eradication -C config.json -I ../../../../../Demographics_Files -D ../../../../../dll -O output
+Pop-Location

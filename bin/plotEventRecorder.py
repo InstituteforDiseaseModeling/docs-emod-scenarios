@@ -123,8 +123,8 @@ def main(filename, logplot):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename', default='ReportEventRecorder.csv')
-    parser.add_argument('-l', '--log', default=False, action='store_true')
+    parser.add_argument('filename', default='ReportEventRecorder.csv', help="Path to recoder CSV file")
+    parser.add_argument('-l', '--log', default=False, action='store_true', help="Enable verbose logging")
     args = parser.parse_args()
     main(args.filename, args.log)
 

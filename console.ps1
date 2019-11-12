@@ -1,7 +1,7 @@
 
 $env:PROJECT_ROOT = $PSScriptRoot
 
-Set-Location -Path "$env:PROJECT_ROOT"
+Push-Location -Path "$env:PROJECT_ROOT"
 
 $VENV = (Join-Path $env:PROJECT_ROOT ".venv" -Resolve)
 Set-Variable -Name "IsWindows" -Value ($env:OS -eq "Windows_NT") -ErrorAction SilentlyContinue
@@ -22,7 +22,7 @@ function _activate_virtualenv(){
 }
 
 function create_virtualenv(){
-    opts = @(-m venv --copies --prompt="emod-scenarios" "$VENV")
+    opts = @('-m', 'venv', '--copies', '--prompt="emod-scenarios"', "$VENV")
     if($IsWindows){
         & py -3.6 @opts
     } else {
