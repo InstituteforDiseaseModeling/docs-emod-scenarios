@@ -1,0 +1,15 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Passive case finding",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Passive case finding\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  },
+  "plotPropertyReport": {
+    "commandline": "python ../../../../bin/plotPropertyReport.py -c \"Active TB Infections\" -c \"Infected\" -c \"Active Smearpos TB Infections\" -c \"Statistical Population\" -g InterventionStatus output/PropertyReportTB.json",
+    "script": "plotPropertyReport.py"
+  }
+}

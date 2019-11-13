@@ -1,0 +1,60 @@
+Scenarios/Generic/DensityScaling/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c I -t "Density Scaling" output/InsetChart.json
+Scenarios/Generic/HINT_AgeAndAccess/A_BaselineOutbreak/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReport.json
+Scenarios/Generic/HINT_AgeAndAccess/B_AgeTargetedVaccine/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReport.json
+Scenarios/Generic/HINT_AgeAndAccess/C_AccessTargetedVaccine/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReport.json
+Scenarios/Generic/HINT_SeattleCommuting/plotPropertyReport.bat;python ../../../bin/plotPropertyReport.py output/PropertyReport.json -m
+Scenarios/Generic/SEIR/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SEIR -t "Generic SEIR" output/InsetChart.json
+Scenarios/Generic/SEIRS/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SEIRW -t "SEIRS" output/InsetChart.json
+Scenarios/Generic/SEIR_VitalDynamics/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SEIR -t "Generic SEIR with vital dynamics" output/InsetChart.json
+Scenarios/Generic/SI/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SI -t "SI" output/InsetChart.json
+Scenarios/Generic/SIR/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SIR -t "SIR" output/InsetChart.json
+Scenarios/Generic/SIRS/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SIRW -t "SIRS" output/InsetChart.json
+Scenarios/Generic/SIS/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SI -t "SIS" output/InsetChart.json
+Scenarios/Generic/Vaccinations/A_BaselineOutbreak/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -n output/PropertyReport.json
+Scenarios/Generic/Vaccinations/A_BaselineOutbreak/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SIR -t "Vaccinations - Baseline" output/InsetChart.json
+Scenarios/Generic/Vaccinations/B_Vaccinations/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -n output/PropertyReport.json
+Scenarios/Generic/Vaccinations/B_Vaccinations/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SIR -t "Vaccinations - Vaccination All" output/InsetChart.json
+Scenarios/Generic/Vaccinations/C_TargetedVaccinations/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -n output/PropertyReport.json
+Scenarios/Generic/Vaccinations/C_TargetedVaccinations/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SIR -t "Vaccinations - Easy Targeted" output/InsetChart.json
+Scenarios/Generic/Zoonosis/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c SEIRW -t "Zoonosis" output/InsetChart.json
+Scenarios/HIV/Health_care/ART_Eligibility/plotEvents.bat;python ../../../../bin/plotEventRecorder.py  output/ReportEventRecorder.csv
+Scenarios/HIV/Health_care/plotBinnedChart.bat;python ../../../bin/plotBinnedPopulation.py -c "Infected" output/BinnedReport.json
+Scenarios/HIV/Health_care/plotHIVSummary.bat;python ../../../bin/plotHIVSummary_15_49.py output/ReportHIVByAgeAndGender.csv
+Scenarios/HIV/Health_care/Restricting_Multiple_Entries/plotEvents.bat;python ../../../../bin/plotEventRecorder.py  output/ReportEventRecorder.csv
+Scenarios/HIV/HIV-specific_biology/plotBinnedChart.bat;python ../../../bin/plotBinnedPopulation.py -c "Infected" output/BinnedReport.json
+Scenarios/HIV/HIV-specific_biology/plotHIVSummary.bat;python ../../../bin/plotHIVSummary_15_49.py output/ReportHIVByAgeAndGender.csv
+Scenarios/HIV/Transmission/plotHIVSummary.bat;python ../../../bin/plotHIVSummary_15_49.py output/ReportHIVByAgeAndGender.csv
+Scenarios/HIV/Transmission/plotSIRChannels.bat;python ../../../bin/plotSIRChannels.py -c I -t "HIV Transmission" output/InsetChart.json
+Scenarios/TB/Age_Immunity/Lifelong/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReportTB.json
+Scenarios/TB/Age_Immunity/Lifelong/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Lifelong age-dependent immunity" output/InsetChart.json
+Scenarios/TB/Age_Immunity/Vaccines/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReportTB.json
+Scenarios/TB/Age_Immunity/Vaccines/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Vaccination and age-dependent immunity" output/InsetChart.json
+Scenarios/TB/Age_Immunity/Waning/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReportTB.json
+Scenarios/TB/Age_Immunity/Waning/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Waning age-dependent immunity" output/InsetChart.json
+Scenarios/TB/Cascade_Of_Care/Active_Case_Finding/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections" -c "Infected" -c "Active Smearpos TB Infections" -c "Statistical Population" -g InterventionStatus output/PropertyReportTB.json
+Scenarios/TB/Cascade_Of_Care/Active_Case_Finding/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Active case finding" output/InsetChart.json
+Scenarios/TB/Cascade_Of_Care/Passive_Case_Finding/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections" -c "Infected" -c "Active Smearpos TB Infections" -c "Statistical Population" -g InterventionStatus output/PropertyReportTB.json
+Scenarios/TB/Cascade_Of_Care/Passive_Case_Finding/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Passive case finding" output/InsetChart.json
+Scenarios/TB/Disease_Progression/Active_presentation/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Active disease presentation" output/InsetChart.json
+Scenarios/TB/Disease_Progression/Latency_progression/compareScenarios.bat;python ../../../../bin/plotTbResults_Progression_Comparison.py -b ../SEIR/output/InsetChart.json -C output/InsetChart.json -c "Latent TB Prevalence" -c "Active Presymptomatic Prevalence" -c "Active Symptomatic Prevalence"  -c "Active Sx Smear pos Prevalence" -c "Active Sx Smear neg Prevalence" -c "Active Sx Extrapulm Prevalence" -c "Latent TB Prevalence" -c "Latent Fast TB Prevalence" -c "Latent Slow TB Prevalence"
+Scenarios/TB/Disease_Progression/Latency_progression/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Latency progression" output/InsetChart.json
+Scenarios/TB/Disease_Progression/SEIR/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "TB as SEIR" output/InsetChart.json
+Scenarios/TB/Health_Systems/MultipleSystems/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections" -c "Statistical Population" -c "Infected" output/PropertyReportTB.json
+Scenarios/TB/Health_Systems/MultipleSystems/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Public and private health systems" output/InsetChart.json
+Scenarios/TB/Health_Systems/NoneToPublic/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections" -c "Statistical Population" -c "Infected" output/PropertyReportTB.json
+Scenarios/TB/Health_Systems/NoneToPublic/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Move individuals with no health care to the public system" output/InsetChart.json
+Scenarios/TB/Health_Systems/PrivateToPublic/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections" -c "Statistical Population" -c "Infected" output/PropertyReportTB.json
+Scenarios/TB/Health_Systems/PrivateToPublic/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Move individuals in the private system to public" output/InsetChart.json
+Scenarios/TB/Health_Systems/SystemImprovement/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py -c "Active TB Infections:QualityOfCare:None" -c "Active TB Infections:QualityOfCare:Private" -c "Active TB Infections:QualityOfCare:Public" -c "Statistical Population:QualityOfCare:None" -c "Statistical Population:QualityOfCare:Private" -c "Statistical Population:QualityOfCare:Public" -c "Infected:QualityOfCare:None" -c "Infected:QualityOfCare:Private" -c "Infected:QualityOfCare:Public" output/PropertyReportTB.json
+Scenarios/TB/Health_Systems/SystemImprovement/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Improve quality in the private system" output/InsetChart.json
+Scenarios/TB/HIV_Coinfection/ART/plotTBHIVART.bat;python  ../../../bin/plotTBHIVART.py --title="ART" output/Report_TBHIV_ByAge.csv
+Scenarios/TB/HIV_Coinfection/ART/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "ART for HIV Coinfection" output/InsetChart.json
+Scenarios/TB/HIV_Coinfection/NoART/plotTBHIVART.bat;python  ../../../bin/plotTBHIVART.py --title="NoART" output/Report_TBHIV_ByAge.csv
+Scenarios/TB/HIV_Coinfection/NoART/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "No ART for HIV Coinfection" output/InsetChart.json
+Scenarios/TB/MDR-TB/Effective_Treatment/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Second line treatment" output/InsetChart.json
+Scenarios/TB/MDR-TB/Ineffective_Treatment/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Ineffective treatment" output/InsetChart.json
+Scenarios/TB/Population_BurnIn/Private_To_Public/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Private to public health care" output/InsetChart.json
+Scenarios/TB/Population_BurnIn/Steady_State/plotSIRChannels.bat;python ../../../../bin/plotSIRChannels.py -c SEIR -t "Steady state" output/InsetChart.json
+Scenarios/Typhoid/EnvironmentalDiagnostic/plotPropertyReport.bat;python ../../../bin/plotPropertyReport.py output/PropertyReportEnvironmental.json
+Scenarios/Typhoid/Multi-Route_HINT/A_Baseline_MR-HINT/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReportEnvironmental.json
+Scenarios/Typhoid/Multi-Route_HINT/B_DownTheRiver_MR-HINT/plotPropertyReport.bat;python ../../../../bin/plotPropertyReport.py output/PropertyReportEnvironmental.json

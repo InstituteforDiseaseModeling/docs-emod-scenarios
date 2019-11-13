@@ -1,0 +1,11 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Density Scaling",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../bin/plotSIRChannels.py -c I -t \"Density Scaling\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  }
+}

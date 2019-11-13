@@ -1,0 +1,11 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "TB as SEIR",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"TB as SEIR\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  }
+}

@@ -1,19 +1,17 @@
 #!/usr/bin/env python
 
-from __future__ import division #allows you to do non-integer (ie floating point) division
-from builtins import zip
-from builtins import range
+from __future__ import division  # allows you to do non-integer (ie floating point) division
+
 import argparse
 import json
-import matplotlib.pyplot as plt
-import numpy
-import os
-import subprocess
+from builtins import range
+from builtins import zip
+
 from matplotlib.backends.backend_pdf import PdfPages
 from pylab import *
 
 
-def plot_SEIR(filename, figurename):
+def main(filename, figurename):
 
     with open(filename, 'r') as handle:
         baseline_output_data = json.load( handle )
@@ -77,13 +75,16 @@ def plot_SEIR(filename, figurename):
 
     pass
 
+def cli():
+    parser = argparse.ArgumentParser(description="Plot ")
+    parser.add_argument('report', help='Path to the report file (JSON)')
+    parser.add_argument('-s', '--save', help='Output file path for the saved chart')
+    return parser
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('filename', help='Inset chart filename')
-    parser.add_argument('-s', '--save', help='Filename to save chart')
+    parser = cli()
     args = parser.parse_args()
 
-    plot_SEIR(args.filename, args.save)
+    main(args.report, args.save)
 
     pass

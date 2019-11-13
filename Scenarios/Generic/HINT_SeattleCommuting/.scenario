@@ -1,0 +1,11 @@
+{
+  "plotPropertyReport": {
+    "commandline": "python ../../../bin/plotPropertyReport.py output/PropertyReport.json -m",
+    "script": "plotPropertyReport.py"
+  },
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "HINT Seattle Commuting",
+    "report": "output/InsetChart.json"
+  }
+}

@@ -5,14 +5,11 @@
 # OUTPUT: figure drawn on screen
 
 
-#from __future__ import print_function
 import argparse
-import copy
 import csv
 import math
-import matplotlib.pyplot as pyplot
-import sys
 
+import matplotlib.pyplot as pyplot
 
 MALE_ENUM = 0
 FEMALE_ENUM = 1
@@ -68,6 +65,10 @@ def main(filename):
 
     pass
 
+def cli():
+    parser = argparse.ArgumentParser(description="Plot HIV prevalence, incidence rate, and mortality rate for ages 15-49 by gender")
+    parser.add_argument('report', default='output/ReportHIVByAgeAndGender.csv', help="Relative or absolute path to the report CSV file.")
+    return parser
 
 def plot_data(data, sex_index):
 
@@ -195,9 +196,8 @@ def do_plot(male, female, timeline, plot_definition):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('filename', default='ReportHIVByAgeAndGender.csv')
+    parser = cli()
     args = parser.parse_args()
-    main(args.filename)
+    main(args.report)
 
     pass

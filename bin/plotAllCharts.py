@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-from __future__ import division
-from builtins import str
-import matplotlib.pyplot as plt
 import argparse
 import json
-import sys
-import pylab
+from builtins import str
 from math import ceil, sqrt
+
+import matplotlib.pyplot as plt
 
 
 def main(report, title = "" ):
@@ -42,10 +39,14 @@ def main(report, title = "" ):
     plt.subplots_adjust( left=0.05, right=0.95, bottom=0.035, top=0.915, wspace=0.4, hspace=0.5 )
     plt.show()
 
-if __name__ == '__main__':
+def cli():
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", default="InsetChart.json", help="Path to the inset chart JSON file")
-    parser.add_argument("title", default="", help="The title for the chart window")
+    parser.add_argument("-t","--title", default="", help="The title for the chart window")
+    parser.add_argument("report", default="output/InsetChart.json", help="Path to the report file (JSON)")
+    return parser
+
+if __name__ == '__main__':
+    parser = cli()
     args = parser.parse_args()
-    main(args.path, args.title)
+    main(args.report, args.title)
     pass

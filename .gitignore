@@ -18,6 +18,7 @@ output
 status.txt
 log
 *.temp.json
+Std*.txt
 
 # Python
 .virtualenv

@@ -1,0 +1,15 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Vaccinations - Baseline",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../../bin/plotSIRChannels.py -c SIR -t \"Vaccinations - Baseline\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  },
+  "plotPropertyReport": {
+    "commandline": "python ../../../../bin/plotPropertyReport.py -n output/PropertyReport.json",
+    "script": "plotPropertyReport.py"
+  }
+}

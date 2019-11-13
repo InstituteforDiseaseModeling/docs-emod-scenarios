@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 
-from __future__ import division #allows you to do non-integer (ie floating point) division
+from __future__ import division  # allows you to do non-integer (ie floating point) division
 from __future__ import print_function
-from builtins import range
+
 import argparse
 import json
-import matplotlib.pyplot as plt
+from builtins import range
+
 import numpy
-import os
-import subprocess
 from matplotlib.backends.backend_pdf import PdfPages
 from pylab import *
 
@@ -77,13 +76,16 @@ def compareBaselineToNew(comparison_filename, baseline_filename, channels, save_
     plt.show()
     pass
 
+def cli():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-b','--baseline', help='Path to baseline report')
+    parser.add_argument('-C','--compare', help='Path to compare report')
+    parser.add_argument('-c', '--channel', default=[], action='append', help='Channel(s) to display')
+    parser.add_argument('-s', '--save', help='Path to a directory for saving figure(s)')
+    return parser
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('baseline', help='Baseline inset chart filename')
-    parser.add_argument('compare', help='Comparison inset chart filename')
-    parser.add_argument('-c', '--channel', default=[], action='append', help='Channel(s) to display')
-    parser.add_argument('-s', '--save', help='Filename for saving figure(s)')
+    parser = cli()
     args = parser.parse_args()
     print("Comparing '{0}' against '{1}'".format(args.compare, args.baseline))
     print("Saving figures to '{0}'".format(args.save) if args.save else "Not saving figures to file.")

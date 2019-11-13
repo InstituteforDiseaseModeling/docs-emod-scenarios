@@ -1,0 +1,15 @@
+{
+  "plotBinnedChart": {
+    "commandline": "python ../../../bin/plotBinnedPopulation.py -c \"Infected\" output/BinnedReport.json",
+    "script": "plotBinnedChart.py"
+  },
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Infected",
+    "report": "output/InsetChart.json"
+  },
+  "plotHIVSummary": {
+    "commandline": "python ../../../bin/plotHIVSummary_15_49.py output/ReportHIVByAgeAndGender.csv",
+    "script": "plotHIVSummary.py"
+  }
+}

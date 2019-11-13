@@ -6,8 +6,10 @@
 
 
 from __future__ import print_function
+
 import argparse
 import json
+
 import matplotlib.pyplot as pyplot
 
 
@@ -33,12 +35,15 @@ def main(filename, channel):
 
     pass
 
+def cli():
+    parser = argparse.ArgumentParser(description="Plot the population by age group.")
+    parser.add_argument('-c', '--channel', default='Population', help="Channel to plot")
+    parser.add_argument('report', default='output/BinnedReport.json', help="Path to the report file (JSON)")
+    return parser
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('path', default='BinnedReport.json', help="Path to the JSON report file")
-    parser.add_argument('-c', '--channel', default='Population', help="Channel to plot")
+    parser = cli()
     args = parser.parse_args()
-    main(args.path, args.channel)
+    main(args.report, args.channel)
 
     pass

@@ -2,7 +2,8 @@ Push-Location -Path $PSScriptRoot
 
 . ../../../../scripts/helpers.ps1
 
-$chart = (Join-Path "output" "InsetChart.json")
-$pyscript = (Join-Path "$BIN_ROOT" "plotAllCharts.py")
-$pytitle = "HIV Cascade Multiple Entries"
-& python $pyscript $chart "$pytitle"
+$sc = (Get-Content -Path ".scenario" | ConvertFrom-Json -AsHashtable)
+$key = (Split-Path $MyInvocation.MyCommand.Name -LeafBase)
+$config = $sc[$key]
+$pyscript = (Join-Path "$BIN_ROOT" $config.script)
+& python $pyscript --title="$($config.title)" $config.report

@@ -2,6 +2,6 @@
    "disease_plugins": [],
    "interventions": [],
    "reporter_plugins": [
-      "..\\..\\..\\..\\Demographics_Files\\libcustomreport_TBHIV_ByAge.dll"
+      "../../../../Demographics_Files/libcustomreport_TBHIV_ByAge.dll"
    ]
 }

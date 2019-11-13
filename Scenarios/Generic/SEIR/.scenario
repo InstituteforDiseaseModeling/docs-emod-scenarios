@@ -1,0 +1,11 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Generic SEIR",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../bin/plotSIRChannels.py -c SEIR -t \"Generic SEIR\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  }
+}

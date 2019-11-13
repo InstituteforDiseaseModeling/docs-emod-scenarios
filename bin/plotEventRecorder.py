@@ -5,12 +5,12 @@
 # OUTPUT: figure drawn on screen
 
 from __future__ import print_function
+
 import argparse
 import csv
-import math
-import matplotlib.pyplot as pyplot
-import matplotlib.ticker as ticker 
 import sys
+
+import matplotlib.pyplot as pyplot
 
 
 def main(filename, logplot):
@@ -120,12 +120,14 @@ def main(filename, logplot):
 
     pass
 
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('filename', default='ReportEventRecorder.csv', help="Path to recoder CSV file")
+def cli():
+    parser = argparse.ArgumentParser(description="Plot events that occur during a simulation, disaggregated by gender.")
     parser.add_argument('-l', '--log', default=False, action='store_true', help="Enable verbose logging")
+    parser.add_argument('report', default='ReportEventRecorder.csv', help="Path to event recorder report file (CSV)")
+    return parser
+if __name__ == '__main__':
+    parser = cli()
     args = parser.parse_args()
-    main(args.filename, args.log)
+    main(args.report, args.log)
 
     pass

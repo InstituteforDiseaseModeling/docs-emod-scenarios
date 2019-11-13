@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
 import argparse
 import json
+
 import matplotlib.pyplot as plt
 import pylab
-import sys
 
 plt.rcParams['legend.loc'] = 'best'
 
@@ -66,6 +65,14 @@ def finish_plotting(save):
             print("Error '%s' saving chart to '%s'" % (e, filename))
     plt.show()
 
+def cli():
+    parser = argparse.ArgumentParser(description="")
+    parser.add_argument('report', help='Path to channel data filename [InsertChart.json]', nargs='?',
+                        default='output/InsetChart.json')
+    parser.add_argument('-c', '--channels', help='channel[s] to display [SEIRW]', nargs='?', default='SEIRW', action='append', dest='channels', metavar='channel')
+    parser.add_argument('-t', '--title', help='Chart Title', type=str)
+    parser.add_argument('-s', '--save', help='save to filename', type=str)
+    return parser
 
 def main(filename, title, channels, save):
     json_data = loadJsonFromFile(filename)
@@ -83,22 +90,17 @@ def main(filename, title, channels, save):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('filename', help='channel data filename [InsertChart.json]', nargs='?', default='InsetChart.json')
-    parser.add_argument('-c', '--channels', help='channel[s] to display [SEIRW]', nargs='?', default='SEIRW', type=str)
-    parser.add_argument('-t', '--title', help='Chart Title', type=str)
-    parser.add_argument('-s', '--save', help='save to filename', type=str)
+    parser = cli()
     args = parser.parse_args()
 
     try:
-        channels = processChannels(args.channels)
-
-        print("Plotting '%s'" % (args.filename))
+        print("Plotting '%s'" % (args.report))
         print("Displaying channels '%s'" %(args.channels))
         print("Chart Title = '%s'" % (args.title))
         print("Save filename = '%s'" % (args.save))
+        channels = processChannels(args.channels)
 
-        main(args.filename, args.title, channels, args.save)
+        main(args.report, args.title, channels, args.save)
     except (PlottingError) as pe:
         print(pe)
     except (Exception) as e:

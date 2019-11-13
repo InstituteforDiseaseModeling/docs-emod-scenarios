@@ -1,0 +1,11 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "HIV Cascade Multiple Entries",
+    "report": "output/InsetChart.json"
+  },
+  "plotEvents": {
+    "commandline": "python ../../../../bin/plotEventRecorder.py  output/ReportEventRecorder.csv",
+    "script": "plotEvents.py"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "plotAllCharts": {
+    "script": "plotAllCharts.py",
+    "title": "Private to public health care",
+    "report": "output/InsetChart.json"
+  },
+  "plotSIRChannels": {
+    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Private to public health care\" output/InsetChart.json",
+    "script": "plotSIRChannels.py"
+  }
+}

@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-import os
+import argparse
 import json
+
 import matplotlib.pyplot as plt
 import numpy as np
-import sys
-import argparse
+
 
 def openFile(filename):
     try:
@@ -172,7 +171,7 @@ def plotTraces(args, traceValues, statpopValues):
 def main(args):
 
     try:
-        reportFile  = openFile(args.filename)
+        reportFile  = openFile(args.report)
         jsonText    = readFile(reportFile)
         jsonData    = parseJson(jsonText)
         poolData    = getChannels(jsonData)
@@ -186,21 +185,25 @@ def main(args):
     (traceValues, statpopValues) = accumulateTraceData(args, poolData, poolKeys)
     plotTraces(args, traceValues, statpopValues)
 
-def processCommandline():
+def cli():
     parser = argparse.ArgumentParser(description='Property Report Plotting')
-    parser.add_argument('filename', nargs='?', default='PropertyReport.json', help='property report filename [PropertyReport.json]')
     parser.add_argument('-c', '--channel', action='append', help='channel(s) to display [Infected]', metavar='channelName', dest='channels')
     parser.add_argument('-g', '--group',   action='append', help='property or properties by which to group data', metavar='propertyName', dest='grouping')
     parser.add_argument('-n', '--normalize', help='plot channel(s) normalized by statistical population', action='store_true')
     parser.add_argument('-o', '--overlay', help='overlay pools of the same channel', action='store_true')
     parser.add_argument('-s', '--save', help='save figure to disk', action='store_true', dest='saveFigure')
     parser.add_argument('-m', '--matrix', help='plot matrix for all properties', action='store_true')
+    parser.add_argument('report', nargs='?', default='output/PropertyReport.json', help='Path to the property report [PropertyReport.json]')
+    return parser
+
+def processCommandline():
+    parser = cli()
     args = parser.parse_args()
     if not args.channels:
         args.channels = ['Infected']
     if not args.grouping:
         args.grouping = []
-    print("Filename: '%s'" % (args.filename))
+    print("Filename: '%s'" % (args.report))
     print("Channel(s):", args.channels)
     print("Group:     ", args.grouping)
     print("Normalize: ", args.normalize)
