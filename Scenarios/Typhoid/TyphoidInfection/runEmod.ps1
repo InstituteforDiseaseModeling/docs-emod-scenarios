@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 Push-Location -Path $PSScriptRoot
 
 . ../../../scripts/helpers.ps1

@@ -127,7 +127,7 @@ def plotTraces(args, traceValues, statpopValues):
     if args.normalize:
         plotCount *= 2
 
-    plt.figure(args.filename, figsize=(20,11.25))
+    plt.figure(args.report, figsize=(20,11.25))
     traceKeys = sorted(traceValues.keys())
     print(traceKeys)
 

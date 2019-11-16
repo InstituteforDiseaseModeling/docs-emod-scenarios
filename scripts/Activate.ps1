@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 function global:deactivate ([switch]$NonDestructive) {
     # Revert to original values
     if (Test-Path function:_OLD_VIRTUAL_PROMPT) {

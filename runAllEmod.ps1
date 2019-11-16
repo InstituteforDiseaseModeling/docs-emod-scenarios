@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 $PROJECT_ROOT = $PSScriptRoot
 
 Set-Location -Path $PROJECT_ROOT
@@ -26,9 +27,8 @@ foreach ($target in $targets){
 }
 
 Get-ChildItem -Path $PROJECT_ROOT -Force -Recurse -Filter 'runEmod.ps1' | ForEach-Object {
-    $target = (Resolve-Path -Path $_.Directory -Relative)
-
+    $target = $_.FullName
     header -heading "Executing $target"
-    & $_.FullName
+    & $target
     line
 }
