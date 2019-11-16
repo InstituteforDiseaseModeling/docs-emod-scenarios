@@ -1,0 +1,29 @@
+# IDEs
+
+## Jetbrains (IntelliJ, PyCharm, etc.)
+.idea
+
+## VS Code
+.vscode
+
+## RStudio
+.Rproj.user
+.RData
+.Ruserdata
+.Rhistory
+
+
+# EMOD
+output
+status.txt
+log
+*.temp.json
+Std*.txt
+
+# Python
+.virtualenv
+.venv
+__pycache__
+
+# Packrat (R)
+packrat/lib*/

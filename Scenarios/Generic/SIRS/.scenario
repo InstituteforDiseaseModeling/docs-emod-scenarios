@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"SIRS\" output/InsetChart.json",
+  "plotSIRChannels": "-c SIRW -t \"SIRS\" output/InsetChart.json"
+}

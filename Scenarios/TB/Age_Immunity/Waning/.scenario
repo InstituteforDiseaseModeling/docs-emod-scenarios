@@ -1,0 +1,5 @@
+{
+  "plotPropertyReport": "output/PropertyReportTB.json",
+  "plotAllCharts": "--title=\"Waning age-dependent immunity\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Waning age-dependent immunity\" output/InsetChart.json"
+}

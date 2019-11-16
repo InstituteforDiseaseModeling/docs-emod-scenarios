@@ -4,7 +4,7 @@
     {
         "DateCreated": "Tues March 24, 2015",
         "Tool": "Script: ExtrapolateUNMortality.m",
-        "Author": "Daniel J. Klein",
+        "Author": "IDM",
         "RegionName": "Sub-Saharan Africa: Single Node",
         "DataSource": "UN Population Division, 2012 Estimates, plus extrapolation",
         "IdReference": "0",

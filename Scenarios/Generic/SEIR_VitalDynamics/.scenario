@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Generic SEIR with vital dynamics\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Generic SEIR with vital dynamics\" output/InsetChart.json"
+}

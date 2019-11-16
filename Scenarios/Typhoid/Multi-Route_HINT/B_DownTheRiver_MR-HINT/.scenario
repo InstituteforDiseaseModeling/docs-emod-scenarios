@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Down The River MR-HINT\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReportEnvironmental.json"
+}

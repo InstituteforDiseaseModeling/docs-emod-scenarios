@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"HINT - Age-Targeted Vaccine\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReport.json"
+}

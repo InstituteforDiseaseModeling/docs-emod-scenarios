@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Multi-Route HINT\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReportEnvironmental.json"
+}

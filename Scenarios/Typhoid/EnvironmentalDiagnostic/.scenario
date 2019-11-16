@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"EnvironmentalDiagnostic\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReportEnvironmental.json"
+}

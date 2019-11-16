@@ -4,7 +4,7 @@ Each of the included scenarios demonstrates important concepts, features, and ca
 EMOD model. The README files in each of the scenario subdirectories describe what aspect of the
 model the scenario illustrates. Each scenario subdirectory contains the configuration and campaign
 files needed to run an EMOD simulation. The demographics files used for each scenario are listed in
-the configuration file and included in the Demographics_Files directory.
+the configuration file and included in the `Demographics_Files` directory.
 
 The compiled EMOD model, Eradication.exe, is also included. Unlike other executables, you do not
 double-click this file to run simulations. EMOD simulations are run by calling Eradication.exe from
@@ -17,16 +17,18 @@ just open the batch scripts in a text editor to see what commands they contain.
 
 # Prerequisites
 
+## Windows
 We recommend running these scenarios on a Windows computer. You must install the HPC, MPI, and
 Python packages described in the documentation here:
 
 www.idmod.org/docs/general/install-windows.html
 
-The plotting scripts included with these files expect Python 3.6 to be installed at C:\Python36.
-Other plotting packages are optional.
-
+## Unix
 Although EMOD also supports CentOS on Azure, the batch scripts to run simulations will not work and
 the installation instructions differ. However, you can still run simulations from the command line.
 See the CentOS installation instructions here:
 
 www.idmod.org/docs/general/install-centos.html
+
+## R Prequisites
+Running the R examples requires having R installed and running them in an interactive session. This is best achieved using an IDE like [RStudio](https://rstudio.org).

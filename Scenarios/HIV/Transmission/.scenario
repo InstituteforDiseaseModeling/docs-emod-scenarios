@@ -1,0 +1,5 @@
+{
+  "plotHIVSummary": "output/ReportHIVByAgeAndGender.csv",
+  "plotAllCharts": "--title=\"HIV Transmission\" output/InsetChart.json",
+  "plotSIRChannels": "-c I -t \"HIV Transmission\" output/InsetChart.json"
+}

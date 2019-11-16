@@ -1,0 +1,4 @@
+{
+  "plotEvents": "output/ReportEventRecorder.csv",
+  "plotAllCharts": "--title=\"HIV Cascade Multiple Entries\" output/InsetChart.json"
+}

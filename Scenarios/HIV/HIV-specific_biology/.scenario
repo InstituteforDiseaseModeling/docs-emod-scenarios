@@ -1,0 +1,5 @@
+{
+  "plotHIVSummary": "output/ReportHIVByAgeAndGender.csv",
+  "plotBinnedChart": "-c \"Infected\" output/BinnedReport.json",
+  "plotAllCharts": "--title=\"Infected\" output/InsetChart.json"
+}

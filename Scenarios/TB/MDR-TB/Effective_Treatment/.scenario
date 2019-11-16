@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Second line treatment\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Second line treatment\" output/InsetChart.json"
+}

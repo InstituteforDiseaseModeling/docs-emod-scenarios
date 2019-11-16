@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"HINT Seattle Commuting\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReport.json -m"
+}

@@ -2,7 +2,7 @@
     "Metadata": {
         "DateCreated": "Sun Sep 25 23:19:55 2011", 
         "Tool": "convertdemog.py", 
-        "Author": "jsteinkraus", 
+        "Author": "IDM",
         "IdReference": "Gridded world grump2.5arcmin", 
         "Resolution": 150,
         "NodeCount": 1

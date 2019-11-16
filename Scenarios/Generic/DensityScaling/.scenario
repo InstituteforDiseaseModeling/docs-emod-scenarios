@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Density Scaling\" output/InsetChart.json",
+  "plotSIRChannels": "-c I -t \"Density Scaling\" output/InsetChart.json"
+}

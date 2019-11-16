@@ -1,0 +1,5 @@
+{
+  "plotPropertyReport": "-c \"Active TB Infections\" -c \"Infected\" -c \"Active Smearpos TB Infections\" -c \"Statistical Population\" -g InterventionStatus output/PropertyReportTB.json",
+  "plotAllCharts": "--title=\"Active case finding\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Active case finding\" output/InsetChart.json"
+}

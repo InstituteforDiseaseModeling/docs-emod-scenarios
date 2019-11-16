@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"HINT - Baseline Outbreak\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReport.json"
+}

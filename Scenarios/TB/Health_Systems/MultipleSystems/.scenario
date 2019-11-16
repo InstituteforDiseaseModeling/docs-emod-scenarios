@@ -1,0 +1,5 @@
+{
+  "plotPropertyReport": "-c \"Active TB Infections\" -c \"Statistical Population\" -c \"Infected\" output/PropertyReportTB.json",
+  "plotAllCharts": "--title=\"Public and private health systems\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Public and private health systems\" output/InsetChart.json"
+}

@@ -1,0 +1,8 @@
+Push-Location -Path $PSScriptRoot
+
+. ../../../../../scripts/helpers.ps1
+
+Push-Location -Path $PSScriptRoot
+$name = (PSScriptBaseName)
+$script = $PLOT[$name]
+& python $script --title="HIV Cascade Multiple Entries" output/InsetChart.json

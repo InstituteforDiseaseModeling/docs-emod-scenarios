@@ -1,0 +1,4 @@
+{
+  "plotAllCharts": "--title=\"Active disease presentation\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Active disease presentation\" output/InsetChart.json"
+}

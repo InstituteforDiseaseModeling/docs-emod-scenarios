@@ -1,0 +1,5 @@
+{
+  "plotPropertyReport": "-n output/PropertyReport.json",
+  "plotAllCharts": "--title=\"Vaccinations - Vaccination All\" output/InsetChart.json",
+  "plotSIRChannels": "-c SIR -t \"Vaccinations - Vaccination All\" output/InsetChart.json"
+}
