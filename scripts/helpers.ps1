@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 Set-Variable -Name IsWindows -Value ($env:OS -eq "Windows_NT") -ErrorAction SilentlyContinue
 
 $PROJECT_ROOT = (Join-Path $PSScriptRoot ".." -Resolve)

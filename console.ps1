@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 
 $env:PROJECT_ROOT = $PSScriptRoot
 
@@ -28,7 +29,7 @@ function _activate_virtualenv(){
 }
 
 function create_virtualenv(){
-    $opts = @('-m', 'venv', '--copies', "--prompt=`"$VENV_BIN`"", "$VENV")
+    $opts = @('-m', 'venv', '--copies', "--prompt=`"$VENV_PROMPT`"", "$VENV")
     if($IsWindows){
         & py -3.6 @opts
     } else {
