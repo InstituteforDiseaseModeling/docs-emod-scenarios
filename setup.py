@@ -18,7 +18,7 @@ with open(ROOT.joinpath('README.md'), encoding='utf-8') as f:
 
 setup(
     name='emod_scenarios',
-    version='1.0.0',
+    version='2.0.0',
     description='EMOD example scenarios',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -41,18 +41,6 @@ setup(
         'numpy',
         'pandas',
         'seaborn'
-    ],
-    scripts=[
-        'bin/eradication.py',
-        'bin/plotAllCharts.py',
-        'bin/plotBinnedPopulation.py',
-        'bin/plotEventRecorder.py',
-        'bin/plotHIVSummary_15_49.py',
-        'bin/plotPropertyReport.py',
-        'bin/plotSIRChannels.py',
-        'bin/plotTBHIVART.py',
-        'bin/plotTbResults_Progression_Baseline.py',
-        'bin/plotTbResults_Progression_Comparison.py',
     ],
     project_urls={
         'Bug Reports': 'https://github.com/InstituteforDiseaseModeling/docs-emod-scenarios/issues',
