@@ -69,7 +69,7 @@ def cli():
     parser = argparse.ArgumentParser(description="")
     parser.add_argument('report', help='Path to channel data filename [InsertChart.json]', nargs='?',
                         default='output/InsetChart.json')
-    parser.add_argument('-c', '--channels', help='channel[s] to display [SEIRW]', nargs='?', default='SEIRW', action='append', dest='channels', metavar='channel')
+    parser.add_argument('-c', '--channels', help='channel[s] to display [SEIRW]', nargs='?', default=[], action='append', dest='channels', metavar='channel')
     parser.add_argument('-t', '--title', help='Chart Title', type=str)
     parser.add_argument('-s', '--save', help='save to filename', type=str)
     return parser

@@ -19,7 +19,7 @@ with open(ROOT.joinpath('README.md'), encoding='utf-8') as f:
 
 setup(
     name='emod_scenarios',
-    version='2.0.2',
+    version='2.1.0',
     description='EMOD example scenarios',
     long_description=long_description,
     long_description_content_type='text/markdown',

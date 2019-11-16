@@ -33,5 +33,5 @@ Get-ChildItem -Path $BIN_ROOT -Force -Recurse -Filter 'plot*.py' | ForEach-Objec
     $PLOT.Add($basename, $abspath)
 }
 
-. (Join-Path $PROJECT_ROOT "console.ps1")
+. (Join-Path $PROJECT_ROOT "env.ps1")
 Pop-Location

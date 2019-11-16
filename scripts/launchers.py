@@ -102,7 +102,7 @@ class launcher:
                 for name, args in config.items():
                     script = scenario.with_name(f"{name}.ps1")
                     contents = template.format_map({
-                        'helpers_script': relpath(helpers_ps1, scenario),
+                        'helpers_script': relpath(helpers_ps1, scenario.parent),
                         'args': args,
                     })
 
