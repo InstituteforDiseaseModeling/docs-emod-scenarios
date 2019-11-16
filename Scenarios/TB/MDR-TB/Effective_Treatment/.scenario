@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Second line treatment",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Second line treatment\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"Second line treatment\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Second line treatment\" output/InsetChart.json"
 }

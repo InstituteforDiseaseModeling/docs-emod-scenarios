@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Zoonosis",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../bin/plotSIRChannels.py -c SEIRW -t \"Zoonosis\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"Zoonosis\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIRW -t \"Zoonosis\" output/InsetChart.json"
 }

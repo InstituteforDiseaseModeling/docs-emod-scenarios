@@ -1,15 +1,5 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Move individuals with no health care to the public system",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Move individuals with no health care to the public system\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  },
-  "plotPropertyReport": {
-    "commandline": "python ../../../../bin/plotPropertyReport.py -c \"Active TB Infections\" -c \"Statistical Population\" -c \"Infected\" output/PropertyReportTB.json",
-    "script": "plotPropertyReport.py"
-  }
+  "plotPropertyReport": "-c \"Active TB Infections\" -c \"Statistical Population\" -c \"Infected\" output/PropertyReportTB.json",
+  "plotAllCharts": "--title=\"Move individuals with no health care to the public system\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Move individuals with no health care to the public system\" output/InsetChart.json"
 }

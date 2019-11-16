@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Active disease presentation",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Active disease presentation\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"Active disease presentation\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Active disease presentation\" output/InsetChart.json"
 }

@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "SIS",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../bin/plotSIRChannels.py -c SI -t \"SIS\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"SIS\" output/InsetChart.json",
+  "plotSIRChannels": "-c SI -t \"SIS\" output/InsetChart.json"
 }

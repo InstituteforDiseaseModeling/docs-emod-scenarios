@@ -11,16 +11,25 @@ if ($IsWindows) {
     $EMOD = (Join-Path $BIN_ROOT "Eradication.exe")
 }
 
-$PLOT = @{
-}
+$PLOT = @{}
 
+function Get-BaseName($path){
+    return (Split-Path -Path $path -LeafBase)
+}
 
 function PSScriptBaseName(){
     return (Split-Path -LeafBase $MyInvocation.PSCommandPath)
 }
 
 function LoadScenarioConfig($namespace){
-    $scenario = (Get-Content -Path ".scenario" | ConvertFrom-Json )
+    $scenario = (Get-Content -Path ".scenario" | ConvertFrom-Json -AsHashtable)
+    return $scenario[$namespace]
+}
+
+Get-ChildItem -Path $BIN_ROOT -Force -Recurse -Filter 'plot*.py' | ForEach-Object {
+    $basename = $_.BaseName
+    $abspath = $_.FullName
+    $PLOT.Add($basename, $abspath)
 }
 
 . (Join-Path $PROJECT_ROOT "console.ps1")

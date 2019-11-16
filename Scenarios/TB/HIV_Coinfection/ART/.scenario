@@ -1,15 +1,5 @@
 {
-  "plotTBHIVART": {
-    "commandline": "python  ../../../bin/plotTBHIVART.py --title=\"ART\" output/Report_TBHIV_ByAge.csv",
-    "script": "plotTBHIVART.py"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"ART for HIV Coinfection\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  },
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "ART for HIV Coinfection",
-    "report": "output/InsetChart.json"
-  }
+  "plotAllCharts": "--title=\"ART for HIV Coinfection\" output/InsetChart.json",
+  "plotTBHIVART": "--title=\"ART\" output/Report_TBHIV_ByAge.csv",
+  "plotSIRChannels": "-c SEIR -t \"ART for HIV Coinfection\" output/InsetChart.json"
 }

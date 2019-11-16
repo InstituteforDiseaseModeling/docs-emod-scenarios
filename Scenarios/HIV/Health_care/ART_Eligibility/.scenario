@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "HIV Cascade of Care",
-    "report": "output/InsetChart.json"
-  },
-  "plotEvents": {
-    "commandline": "python ../../../../bin/plotEventRecorder.py  output/ReportEventRecorder.csv",
-    "script": "plotEvents.py"
-  }
+  "plotEvents": "output/ReportEventRecorder.csv",
+  "plotAllCharts": "--title=\"HIV Cascade of Care\" output/InsetChart.json"
 }

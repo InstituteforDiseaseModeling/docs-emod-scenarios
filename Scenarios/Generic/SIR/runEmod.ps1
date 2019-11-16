@@ -1,3 +1,8 @@
 Push-Location -Path $PSScriptRoot
-& ../../../bin/Eradication -C config.json -I ../../../Demographics_Files -D ../../../dll -O output
+
+. ../../../scripts/helpers.ps1
+
+Push-Location -Path $PSScriptRoot
+
+& $EMOD --config="config.json" --input-path="$INPUT_ROOT" --dll-path="$DLL_ROOT" --output-path="output"
 Pop-Location

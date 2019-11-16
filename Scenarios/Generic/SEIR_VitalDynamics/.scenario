@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Generic SEIR with vital dynamics",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../bin/plotSIRChannels.py -c SEIR -t \"Generic SEIR with vital dynamics\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"Generic SEIR with vital dynamics\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Generic SEIR with vital dynamics\" output/InsetChart.json"
 }

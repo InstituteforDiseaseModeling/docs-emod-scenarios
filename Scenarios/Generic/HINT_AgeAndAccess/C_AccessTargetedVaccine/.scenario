@@ -1,11 +1,4 @@
 {
-  "plotPropertyReport": {
-    "commandline": "python ../../../../bin/plotPropertyReport.py output/PropertyReport.json",
-    "script": "plotPropertyReport.py"
-  },
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "HINT - Access-Targeted Vaccine",
-    "report": "output/InsetChart.json"
-  }
+  "plotAllCharts": "--title=\"HINT - Access-Targeted Vaccine\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReport.json"
 }

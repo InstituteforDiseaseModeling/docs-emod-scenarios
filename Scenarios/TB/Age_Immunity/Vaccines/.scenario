@@ -1,15 +1,5 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Vaccination and age-dependent immunity",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Vaccination and age-dependent immunity\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  },
-  "plotPropertyReport": {
-    "commandline": "python ../../../../bin/plotPropertyReport.py output/PropertyReportTB.json",
-    "script": "plotPropertyReport.py"
-  }
+  "plotPropertyReport": "output/PropertyReportTB.json",
+  "plotAllCharts": "--title=\"Vaccination and age-dependent immunity\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Vaccination and age-dependent immunity\" output/InsetChart.json"
 }

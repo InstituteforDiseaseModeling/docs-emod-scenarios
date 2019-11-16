@@ -1,11 +1,4 @@
 {
-  "plotPropertyReport": {
-    "commandline": "python ../../../../bin/plotPropertyReport.py output/PropertyReportEnvironmental.json",
-    "script": "plotPropertyReport.py"
-  },
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Multi-Route HINT",
-    "report": "output/InsetChart.json"
-  }
+  "plotAllCharts": "--title=\"Multi-Route HINT\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReportEnvironmental.json"
 }

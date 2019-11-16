@@ -1,15 +1,5 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Latency progression",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Latency progression\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  },
-  "compareScenarios": {
-    "commandline": "python ../../../../bin/plotTbResults_Progression_Comparison.py -b ../SEIR/output/InsetChart.json -C output/InsetChart.json -c \"Latent TB Prevalence\" -c \"Active Presymptomatic Prevalence\" -c \"Active Symptomatic Prevalence\"  -c \"Active Sx Smear pos Prevalence\" -c \"Active Sx Smear neg Prevalence\" -c \"Active Sx Extrapulm Prevalence\" -c \"Latent TB Prevalence\" -c \"Latent Fast TB Prevalence\" -c \"Latent Slow TB Prevalence\"",
-    "script": "compareScenarios.py"
-  }
+  "plotAllCharts": "--title=\"Latency progression\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Latency progression\" output/InsetChart.json",
+  "compareScenarios": "-b ../SEIR/output/InsetChart.json -C output/InsetChart.json -c \"Latent TB Prevalence\" -c \"Active Presymptomatic Prevalence\" -c \"Active Symptomatic Prevalence\"  -c \"Active Sx Smear pos Prevalence\" -c \"Active Sx Smear neg Prevalence\" -c \"Active Sx Extrapulm Prevalence\" -c \"Latent TB Prevalence\" -c \"Latent Fast TB Prevalence\" -c \"Latent Slow TB Prevalence\""
 }

@@ -1,11 +1,4 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Ineffective treatment",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../../bin/plotSIRChannels.py -c SEIR -t \"Ineffective treatment\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  }
+  "plotAllCharts": "--title=\"Ineffective treatment\" output/InsetChart.json",
+  "plotSIRChannels": "-c SEIR -t \"Ineffective treatment\" output/InsetChart.json"
 }

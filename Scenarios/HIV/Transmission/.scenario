@@ -1,15 +1,5 @@
 {
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "HIV Transmission",
-    "report": "output/InsetChart.json"
-  },
-  "plotSIRChannels": {
-    "commandline": "python ../../../bin/plotSIRChannels.py -c I -t \"HIV Transmission\" output/InsetChart.json",
-    "script": "plotSIRChannels.py"
-  },
-  "plotHIVSummary": {
-    "commandline": "python ../../../bin/plotHIVSummary_15_49.py output/ReportHIVByAgeAndGender.csv",
-    "script": "plotHIVSummary.py"
-  }
+  "plotHIVSummary": "output/ReportHIVByAgeAndGender.csv",
+  "plotAllCharts": "--title=\"HIV Transmission\" output/InsetChart.json",
+  "plotSIRChannels": "-c I -t \"HIV Transmission\" output/InsetChart.json"
 }

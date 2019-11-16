@@ -1,11 +1,4 @@
 {
-  "plotPropertyReport": {
-    "commandline": "python ../../../../bin/plotPropertyReport.py output/PropertyReportEnvironmental.json",
-    "script": "plotPropertyReport.py"
-  },
-  "plotAllCharts": {
-    "script": "plotAllCharts.py",
-    "title": "Down The River MR-HINT",
-    "report": "output/InsetChart.json"
-  }
+  "plotAllCharts": "--title=\"Down The River MR-HINT\" output/InsetChart.json",
+  "plotPropertyReport": "output/PropertyReportEnvironmental.json"
 }
