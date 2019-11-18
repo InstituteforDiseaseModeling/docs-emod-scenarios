@@ -21,7 +21,7 @@ function _activate_virtualenv(){
     }
     $activate_ps1 = (Join-Path $VENV "$VENV_BIN/Activate.ps1")
     if (!(Test-Path $activate_ps1)){
-        $template = (Get-Contents -Path (Join-Path $env:PROJECT_ROOT 'scripts' 'Activate.ps1') | Out-String)
+        $template = (Get-Content -Path (Join-Path $env:PROJECT_ROOT 'scripts' 'Activate.ps1') | Out-String)
         $contents = ($template -replace "{virtual_env_path}", $VENV -replace "{virtual_env_prompt}", $VENV_PROMPT -replace "{virtual_env_bin}", $VENV_BIN)
         $contents > $activate_ps1
     }
