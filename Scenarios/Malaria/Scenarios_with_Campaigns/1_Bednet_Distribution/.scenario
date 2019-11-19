@@ -1,0 +1,3 @@
+{
+  "plotAllCharts": "--title=\"Bednet Distribution\" output/InsetCharts.json"
+}

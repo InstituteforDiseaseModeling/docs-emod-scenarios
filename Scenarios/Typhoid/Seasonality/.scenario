@@ -1,0 +1,3 @@
+{
+  "plotAllCharts": "--title=\"Seasonality\" output/InsetCharts.json"
+}

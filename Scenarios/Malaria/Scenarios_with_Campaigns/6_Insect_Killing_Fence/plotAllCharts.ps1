@@ -3,8 +3,7 @@ Push-Location -Path $PSScriptRoot
 
 . ../../../../scripts/helpers.ps1
 
-$sc = (Get-Content -Path ".scenario" | ConvertFrom-Json -AsHashtable)
-$key = (Split-Path $MyInvocation.MyCommand.Name -LeafBase)
-$config = $sc[$key]
-$pyscript = (Join-Path "$BIN_ROOT" $config.script)
-& python $pyscript --title="$($config.title)" $config.report
+Push-Location -Path $PSScriptRoot
+$name = (PSScriptBaseName)
+$script = $PLOT[$name]
+& python $script --title="Insect Killing Fence" output/InsetCharts.json
