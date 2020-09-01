@@ -1,4 +1,0 @@
-{
-  "plotAllCharts": "--title=\"Private to public health care\" output/InsetChart.json",
-  "plotSIRChannels": "-c SEIR -t \"Private to public health care\" output/InsetChart.json"
-}

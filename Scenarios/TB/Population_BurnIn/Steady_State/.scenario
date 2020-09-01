@@ -1,4 +1,0 @@
-{
-  "plotAllCharts": "--title=\"Steady state\" output/InsetChart.json",
-  "plotSIRChannels": "-c SEIR -t \"Steady state\" output/InsetChart.json"
-}

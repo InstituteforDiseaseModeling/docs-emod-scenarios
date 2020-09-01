@@ -1,5 +1,0 @@
-{
-  "plotAllCharts": "--title=\"Active disease presentation\" output/InsetChart.json",
-  "plotSIRChannels": "-c SEIR -t \"Active disease presentation\" output/InsetChart.json",
-  "plotTbResults_Progression_Comparison": "-b ../SEIR/output/InsetChart.json -C output/InsetChart.json -c \"Latent TB Prevalence\" -c \"Active Presymptomatic Prevalence\" -c \"Active Symptomatic Prevalence\" -c \"Active Sx Smear pos Prevalence\" -c \"Active Sx Smear neg Prevalence\" -c \"Active Sx Extrapulm Prevalence\""
-}

@@ -1,5 +1,0 @@
-{
-  "plotAllCharts": "--title=\"ART for HIV Coinfection\" output/InsetChart.json",
-  "plotTBHIVART": "--title=\"ART\" output/Report_TBHIV_ByAge.csv",
-  "plotSIRChannels": "-c SEIR -t \"ART for HIV Coinfection\" output/InsetChart.json"
-}
