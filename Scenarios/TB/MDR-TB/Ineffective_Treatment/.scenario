@@ -1,4 +1,0 @@
-{
-  "plotAllCharts": "--title=\"Ineffective treatment\" output/InsetChart.json",
-  "plotSIRChannels": "-c SEIR -t \"Ineffective treatment\" output/InsetChart.json"
-}
