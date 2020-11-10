@@ -58,8 +58,7 @@
     "Individual_Sampling_Type": "FIXED_SAMPLING",
     "Infection_Updates_Per_Timestep": 1,
     "Infectious_Period_Distribution": "EXPONENTIAL_DISTRIBUTION",
-    "Infectious_Period_Exponential": 4,
-    "Infectivity_Scale_Type": "CONSTANT_INFECTIVITY",
+    "Infectious_Period_Exponential": 4,    
     "Load_Balance_Filename": "",
     "Male_To_Female_Relative_Infectivity_Ages": [
       15,
