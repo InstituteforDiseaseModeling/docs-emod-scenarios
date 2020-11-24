@@ -88,8 +88,7 @@
     "Infection_Updates_Per_Timestep": 1,
     "Infectious_Period_Distribution": "GAUSSIAN_DISTRIBUTION",
     "Infectious_Period_Gaussian_Mean": 12,
-    "Infectious_Period_Gaussian_Std_Dev": 10,
-    "Infectivity_Scale_Type": "CONSTANT_INFECTIVITY",
+    "Infectious_Period_Gaussian_Std_Dev": 10,    
     "Load_Balance_Filename": "",
     "Local_Simulation": 0,
     "Male_To_Female_Relative_Infectivity_Ages": [
